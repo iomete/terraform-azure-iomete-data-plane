@@ -12,7 +12,7 @@ resource "azurerm_resource_group" "main" {
 
 locals {
   lakehouse_user_assigned_identity_name = "${var.cluster_name}-uai"
-  module_version       = "1.0.0"
+  module_version       = "1.2.0"
 
   tags = {
     "iomete.com.cluster_name" : var.cluster_name
